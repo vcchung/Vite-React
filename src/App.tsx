@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [user, setUser] = useState(null);
   useEffect(() => {
-    fetch("https://flask-production-c5e3.up.railway.app/user")
+    fetch("https://flask-production-c5e3.up.railway.app/mongo-user")
       .then((data) => data.json())
       .then((json) => setUser(json.name));
   }, []);
